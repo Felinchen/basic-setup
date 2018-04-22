@@ -9,6 +9,8 @@ Setup :
     - [~/.tmux.conf](#tmuxconf)
 - [Zsh](#zsh)
     - [~/.zshrc](#zshrc)
+- [VS-Code](#vs-code)
+    - [settings.json](#settingsjson)
 
 <!-- /TOC -->
 # Terminal
@@ -180,3 +182,81 @@ source $ZSH/oh-my-zsh.sh
 source ~/.alien/alien.zsh
 export ALIEN_THEME="red"
 ```
+
+# VS-Code
+
+* Plugins
+    * An Old Hope Theme
+    * Auto Close Tag
+    * Auto Rename Tag
+    * AutoFileName
+    * C/C++
+    * Git History
+    * Git HistoryDiff
+    * Git Indicators
+    * indent-rainbow
+    * Markdown All In One
+    * Markdown TOC
+    * Material Icon Theme
+    * Native Debug
+    * Partial Diff
+    * PHP Intelephense
+    * PlatformIO IDE
+    * Python
+    * Rainbow Brackets
+    * Rust (rls)
+    * Spell Right
+
+## settings.json
+```json
+
+    "editor.fontFamily": "Fantasque Sans Mono",
+    "editor.fontSize": 14,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.letterSpacing": 0.5,
+    "editor.lineNumbers": "relative",
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
+    "files.autoSave": "afterDelay",
+    "files.trimTrailingWhitespace": true,
+    "python.autoComplete.addBrackets": true,
+    "spellright.language": "English",
+    "terminal.integrated.fontFamily": "Fantasque Sans Mono",
+    "terminal.integrated.fontSize": 14,
+    "vim.overrideCopy": false,
+    "vim.cmdLineInitialColon": true,
+    "vim.hlsearch": true,
+    "vim.statusBarColors": {},
+    "vim.statusBarColorControl": true,
+    "vim.searchHighlightColor": "rgba(150, 150, 255, 0.3)",
+    "vim.smartcase": true,
+    "window.zoomLevel": 0,
+    "workbench.tips.enabled": false,
+    "workbench.colorTheme": "An Old Hope",
+    "workbench.startupEditor": "newUntitledFile",
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-c>": false,
+        "<C-v>": false
+    },
+    "html.autoClosingTags": true,
+    "html.format.enable": true,
+    "html.format.extraLiners": "head, body, /html",
+    "php.suggest.basic": false,
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "xml",
+        "html"
+    ],
+    "workbench.iconTheme": "material-icon-theme",
+}
+```
+
